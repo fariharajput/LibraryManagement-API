@@ -6,9 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get("/Getallusers", UserController.GetAllUsers);
-router.get("/SignupUser/:UserName&:password", UserController.SignUpUser);
-router.get("/LoginUser/:UserName&:password", UserController.LoginUser);
+router.get("/GetAllUsers", UserController.GetAllUsers);
+router.get("/SignupUser/:UserName&:UserPassword", UserController.SignUpUser);
+router.get("/LoginUser/:UserName&:UserPassword", UserController.LoginUser);
 
 
 module.exports = router;
